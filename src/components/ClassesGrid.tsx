@@ -11,38 +11,43 @@ const classTypes = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     intensity: "low",
-    image: "/assets/zumba.png"  },
+    image: "/assets/zumba.png",
+  },
   {
     name: "Pilates",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     intensity: "medium",
-    image: "/assets/pilates.png"  },
+    image: "/assets/pilates.png",
+  },
   {
     name: "Yoga",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     intensity: "low",
-    image: "/assets/yoga.png"  },
+    image: "/assets/yoga.png",
+  },
   {
     name: "HIIT",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     intensity: "high",
-    image: "/assets/hiit.png"  },
+    image: "/assets/hiit.png",
+  },
   {
     name: "Tabata",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     intensity: "high",
-    image:
-      "/assets/tabata.png",  },
+    image: "/assets/tabata.png",
+  },
   {
     name: "Cross-Training",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     intensity: "medium",
-    image: "/assets/cross-training.png",  },
+    image: "/assets/cross-training.png",
+  },
 ];
 
 export const ClassesGrid = () => {

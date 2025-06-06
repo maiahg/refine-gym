@@ -54,6 +54,10 @@ export const Navbar = () => {
               CONTACT
             </a>
             <Button
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/book-session");
+              }}
               variant="outline"
               size="lg"
               className="border-white bg-black/75 text-white text-lg font-semibold hover:bg-white cursor-pointer hover:text-black/75 transition-all duration-300"
