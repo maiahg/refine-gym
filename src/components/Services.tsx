@@ -28,6 +28,10 @@ export const Services = () => {
                 and provide expert guidance every step of the way.
               </p>
               <Button
+                onClick={(e) => {
+                  e.preventDefault();
+                  router.push("/classes");
+                }}
                 variant="secondary"
                 size="lg"
                 className="bg-white text-black hover:bg-gray-200 px-20 text-md cursor-pointer transition-colors"
