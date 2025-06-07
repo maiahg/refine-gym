@@ -191,7 +191,13 @@ export const ChooseGrid = () => {
                   >
                     Learn More
                   </Button>
-                  <Button className="flex-1 bg-white text-black hover:bg-gray-300 cursor-pointer transition-colors">
+                  <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      router.push("/form");
+                    }}
+                    className="flex-1 bg-white text-black hover:bg-gray-300 cursor-pointer transition-colors"
+                  >
                     Book Session
                   </Button>
                 </div>
