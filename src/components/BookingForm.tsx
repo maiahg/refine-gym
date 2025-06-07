@@ -73,6 +73,12 @@ const BookingForm = () => {
   ];
 
   const onSubmit = (data: BookingFormData) => {
+    console.log("Booking data:", {
+      ...data,
+      date: selectedDate,
+      time: selectedTime,
+    });
+    
     form.reset();
     setSelectedDate(undefined);
     setSelectedTime("");
@@ -99,7 +105,7 @@ const BookingForm = () => {
                       selected={selectedDate}
                       onSelect={setSelectedDate}
                       disabled={(date) => date < new Date()}
-                      className={cn("w-full p-3")}
+                      className={cn("w-full p-3 ")}
                     />
                   </CardContent>
                 </Card>

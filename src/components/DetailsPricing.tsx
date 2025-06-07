@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { CheckCircle, DollarSign, Clock, Star } from "lucide-react";
+import { CheckCircle, DollarSign, Clock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 

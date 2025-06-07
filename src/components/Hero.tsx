@@ -21,7 +21,7 @@ export const Hero = () => {
           NO CROWDS. NO NOISE
         </h2>
         <h3 className="text-2xl md:text-4xl font-light mb-64 tracking-wide">
-          JUST A SPACE THAT'S BUILD FOR RESULTS
+          JUST A SPACE THAT&rsquo;S BUILD FOR RESULTS
         </h3>
 
         <Button

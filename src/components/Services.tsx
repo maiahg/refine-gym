@@ -23,7 +23,7 @@ export const Services = () => {
               </div>
               <h3 className="text-2xl font-bold mb-4">Personal Training</h3>
               <p className="text-gray-300 mb-8 leading-relaxed">
-                Whether you're aiming to build muscle, lose weight, or improve
+                Whether you&rsquo;re aiming to build muscle, lose weight, or improve
                 performance, our certified trainers design personalized workouts
                 and provide expert guidance every step of the way.
               </p>
@@ -49,7 +49,7 @@ export const Services = () => {
               <h3 className="text-2xl font-bold mb-4">Group Classes</h3>
               <p className="text-black mb-8 leading-relaxed">
                 Sweat, smile, and stay motivated in our dynamic group sessions.
-                Whether it's Bootcamp, Zumba, or Yoga, our classes are designed
+                Whether it&rsquo;s Bootcamp, Zumba, or Yoga, our classes are designed
                 for all fitness levels and packed with energy, support, and
                 results.
               </p>

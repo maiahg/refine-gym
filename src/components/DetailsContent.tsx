@@ -41,7 +41,7 @@ export const DetailsContent = ({ sessionType }: DetailsContentProps) => {
                   {serviceData.description}
                 </p>
 
-                <h3 className="text-xl font-semibold mb-4">What's Included:</h3>
+                <h3 className="text-xl font-semibold mb-4">What&rsquo;s Included:</h3>
                 <div className="grid md:grid-cols-2 gap-3">
                   {serviceData.features.map((feature, index) => (
                     <div key={index} className="flex items-center gap-3">
