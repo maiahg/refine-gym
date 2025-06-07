@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRouter } from "next/navigation";
 
 const sessionTypes = [
   {
@@ -93,6 +94,7 @@ const sessionTypes = [
 ];
 
 export const ChooseGrid = () => {
+  const router = useRouter();
   const [selectedType, setSelectedType] = useState<string>("all");
 
   const filteredSessions =
@@ -139,9 +141,7 @@ export const ChooseGrid = () => {
               </Button>
               <Button
                 size="lg"
-                variant={
-                  selectedType === "training" ? "default" : "outline"
-                }
+                variant={selectedType === "training" ? "default" : "outline"}
                 onClick={() => setSelectedType("training")}
                 className={`px-8 py-2 rounded-full transition-colors cursor-pointer ${
                   selectedType === "training"
@@ -178,6 +178,14 @@ export const ChooseGrid = () => {
                 </p>
                 <div className="flex space-x-4">
                   <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      router.push(
+                        session.type === "classes"
+                          ? "/details?sessionType=classes"
+                          : "/details?sessionType=training"
+                      );
+                    }}
                     variant="outline"
                     className="flex-1 bg-black border-white text-white hover:bg-white cursor-pointer hover:text-black transition-colors"
                   >

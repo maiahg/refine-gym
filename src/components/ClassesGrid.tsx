@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRouter } from "next/navigation";
 
 const classTypes = [
   {
@@ -51,6 +52,7 @@ const classTypes = [
 ];
 
 export const ClassesGrid = () => {
+  const router = useRouter();
   const [selectedIntensity, setSelectedIntensity] = useState<string>("all");
 
   const filteredClasses =
@@ -148,6 +150,10 @@ export const ClassesGrid = () => {
                 </p>
                 <div className="flex space-x-4">
                   <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      router.push("/details?sessionType=classes");
+                    }}
                     variant="outline"
                     className="flex-1 bg-black border-white text-white hover:bg-white cursor-pointer hover:text-black transition-colors"
                   >

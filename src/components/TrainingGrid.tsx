@@ -4,6 +4,7 @@ import React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useRouter } from "next/navigation";
 
 const trainingTypes = [
   {
@@ -51,6 +52,7 @@ const trainingTypes = [
 ];
 
 export const TrainingGrid = () => {
+  const router = useRouter();
   const [selectedLevel, setSelectedLevel] = useState<string>("all");
 
   const filteredTraining =
@@ -111,9 +113,7 @@ export const TrainingGrid = () => {
               </Button>
               <Button
                 size="lg"
-                variant={
-                  selectedLevel === "advanced" ? "default" : "outline"
-                }
+                variant={selectedLevel === "advanced" ? "default" : "outline"}
                 onClick={() => setSelectedLevel("advanced")}
                 className={`px-8 py-2 rounded-full transition-colors cursor-pointer ${
                   selectedLevel === "advanced"
@@ -150,6 +150,10 @@ export const TrainingGrid = () => {
                 </p>
                 <div className="flex space-x-4">
                   <Button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      router.push("/details?sessionType=training");
+                    }}
                     variant="outline"
                     className="flex-1 bg-black border-white text-white hover:bg-white cursor-pointer hover:text-black transition-colors"
                   >
